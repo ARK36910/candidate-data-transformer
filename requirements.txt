@@ -1,0 +1,9 @@
+pandas
+pydantic
+PyPDF2
+phonenumbers
+python-dateutil
+pycountry
+rapidfuzz
+jsonschema
+pytest
