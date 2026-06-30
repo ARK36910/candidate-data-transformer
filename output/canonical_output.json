@@ -1,0 +1,121 @@
+{
+  "candidate_id": "f3a1b2c4-d5e6-7890-abcd-ef1234567890",
+  "full_name": "Ananya Roy",
+  "emails": [
+    "ananya.roy@gmail.com",
+    "ananya.r@acmecorp.com"
+  ],
+  "phones": [
+    "+919876543210"
+  ],
+  "location": {
+    "city": "Bengaluru, Karnataka",
+    "state": null,
+    "country": "IN"
+  },
+  "headline": "Senior Data Scientist",
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "TensorFlow",
+    "SQL",
+    "Pandas",
+    "Deep Learning",
+    "Natural Language Processing",
+    "scikit-learn",
+    "Docker",
+    "Git"
+  ],
+  "experience": [
+    {
+      "title": "Senior Data Scientist",
+      "company": "Acme Corp",
+      "start": "2021-03",
+      "end": "present",
+      "description": null
+    },
+    {
+      "title": "Data Scientist",
+      "company": "DataWorks India",
+      "start": "2019-07",
+      "end": "2021-02",
+      "description": null
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech Computer Science",
+      "institution": "IIT Delhi",
+      "start": "2015-07",
+      "end": "2019-05",
+      "description": null
+    }
+  ],
+  "links": [
+    "https://linkedin.com/in/ananya-roy",
+    "https://github.com/ananya-roy"
+  ],
+  "provenance": [
+    {
+      "field": "full_name",
+      "source": "recruiter.csv",
+      "method": "csv_column"
+    },
+    {
+      "field": "emails",
+      "source": "recruiter.csv",
+      "method": "csv_column"
+    },
+    {
+      "field": "emails",
+      "source": "resume.pdf",
+      "method": "regex"
+    },
+    {
+      "field": "phones",
+      "source": "recruiter.csv",
+      "method": "csv_column"
+    },
+    {
+      "field": "headline",
+      "source": "recruiter.csv",
+      "method": "csv_column"
+    },
+    {
+      "field": "skills",
+      "source": "recruiter.csv",
+      "method": "csv_column"
+    },
+    {
+      "field": "skills",
+      "source": "resume.pdf",
+      "method": "pdf_heuristic"
+    },
+    {
+      "field": "location",
+      "source": "recruiter.csv",
+      "method": "csv_column"
+    },
+    {
+      "field": "links",
+      "source": "recruiter.csv",
+      "method": "csv_column"
+    },
+    {
+      "field": "links",
+      "source": "resume.pdf",
+      "method": "regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume.pdf",
+      "method": "pdf_heuristic"
+    },
+    {
+      "field": "education",
+      "source": "resume.pdf",
+      "method": "pdf_heuristic"
+    }
+  ],
+  "overall_confidence": 0.9025
+}
