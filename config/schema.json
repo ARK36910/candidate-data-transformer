@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CandidateOutput",
+  "type": "object",
+  "required": ["candidate_id", "full_name", "emails"],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "full_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "emails": {
+      "type": "array",
+      "items": { "type": "string", "format": "email" },
+      "minItems": 1
+    },
+    "phones": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "location": {
+      "type": ["object", "null"],
+      "properties": {
+        "city":    { "type": ["string", "null"] },
+        "state":   { "type": ["string", "null"] },
+        "country": { "type": ["string", "null"] }
+      }
+    },
+    "headline": {
+      "type": ["string", "null"]
+    },
+    "skills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title":   { "type": ["string", "null"] },
+          "company": { "type": ["string", "null"] },
+          "start":   { "type": ["string", "null"] },
+          "end":     { "type": ["string", "null"] }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "degree":      { "type": ["string", "null"] },
+          "institution": { "type": ["string", "null"] },
+          "start":       { "type": ["string", "null"] },
+          "end":         { "type": ["string", "null"] }
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "overall_confidence": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "provenance": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "properties": {
+          "field":  { "type": "string" },
+          "source": { "type": "string" },
+          "method": { "type": "string" }
+        }
+      }
+    }
+  }
+}
